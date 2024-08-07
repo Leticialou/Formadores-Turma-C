@@ -4,16 +4,19 @@
     background-image: url("../imagem/Menu.svg");
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: ce;
+    background-position: center;
 }
 
 .cabecalho{
     background-color: var(--branco);
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    position:relative;
+
 }
 
-.cabecalho{
+.container{
     display:flex;
     align-items: center;
 }
@@ -26,10 +29,17 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container__botao:checked~.lista-menu{
     display: block;
 }
+
+
+.lista-menu__titulo, .lista-menu__item{
+    display: block;
+}
+
 
 
